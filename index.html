@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<head>
+  <title>MITWPU Student Registration</title>
+  <link rel="icon" href="MIT Logo.jpg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <img src="MIT Logo.jpg" alt="MITWPU Logo" />
+    <h2>New Student Registration</h2>
+  </header>
+  <style>
+    body {
+      background-image: url("bgimg.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+    }
+  </style>
+  <main>
+    <section id="register">
+      <fieldset>
+        <form id="register-form">
+          <h3>Basic Student Details:</h3>
+          <label for="fname">First Name:</label><br />
+          <input type="text" id="fname" name="fname" /><br />
+          <label for="lname">Last Name: </label><br />
+          <input type="text" id="lname" name="lname" /><br />
+          <label for="email">Email Address:</label><br />
+          <input type="email" id="email" name="email" /><br />
+          <label for="mnumber">Mobile Number:</label><br />
+          <input type="number" id="mnumber" name="mnumber" /><br />
+          <label for="Date">Date of Birth:</label><br />
+          <input type="date" id="dob" name="dob" /><br />
+          <label for="gender">Gender:</label><br />
+          <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option></select
+          ><br />
+          <label for="year">Year</label><br />
+          <select id="year" name="year">
+            <option value="fy">First Year</option>
+            <option value="sy">Second Year</option></select
+          ><br />
+
+          <h3>Permanent Address Details:</h3>
+          <label for="saddr">Street:</label><br />
+          <input type="text" id="saddr" name="saddr" /><br />
+          <label for="city">City:</label><br />
+          <input type="text" id="city" name="city" /><br />
+          <label for="state">State:</label><br />
+          <input type="text" id="state" name="state" /><br />
+          <label for="pin">Pincode:</label><br />
+          <input type="number" id="pin" name="pin" /><br />
+
+          <h3>Academic Details:</h3>
+          <label for="ssc">Class X %:</label><br />
+          <input type="number" id="ssc" name="ssc" /><br />
+          <label for="hsc">Class XII %:</label><br />
+          <input type="number" id="hsc" name="hsc" /><br />
+          <label for="fyp">First Year CGPA:(if applicable)</label><br />
+          <input type="number" id="fyp" name="fyp" /><br />
+
+          <h3>Document Uploads:</h3>
+          <label for="docs"
+            >Upload all the required documents mentioned in the form:</label
+          ><br />
+          <input type="file" id="docs" name="docs" /><br />
+          <input
+            type="submit"
+            value="Submit"
+            style="background-color: rgb(89, 237, 89)"
+          />
+        </form>
+      </fieldset>
+    </section>
+  </main>
+  <script src="stscript.js"></script>
+</body>
